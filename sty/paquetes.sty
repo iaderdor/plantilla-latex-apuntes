@@ -1,0 +1,42 @@
+\ProvidesPackage{paquetes}
+
+%	Adecuación a la tipografía española
+
+\usepackage[spanish,es-noquoting]{babel}
+
+%	Modificación de márgenes
+
+\usepackage[left=20mm,right=20mm,top=20mm, bottom=20mm]{geometry}
+
+%	Paquetes de utilidad matemática
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+%	Carga de imágenes
+
+\usepackage{graphicx}
+
+%	Gráficos
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes,circuits.ee.IEC}
+
+
+%	Selección de tipos de letra
+
+\usepackage{fontspec}
+\setmainfont{Chaparral Pro}
+
+%	Hace un documento con varias columnas
+
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{float}	%Evita problemas con los elementos flotantes en multicol.
+\setlength{\columnsep}{1cm}
+
+%	Carga los documentos de la carpeta de capitulos
+
+\usepackage{subfiles}

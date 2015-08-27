@@ -1,0 +1,62 @@
+%
+%
+%	Este documento pretende ser una guía para la relización de apuntes tomados en clase.
+%
+%	ES NECESARIO XeLaTeX PARA COMILAR ESTE ARCHIVO.
+%
+%
+%	Plantilla de apuntes realizada por
+%	Ismael Aderdor Domingo <aderdor@gmail.com>
+%	
+%	Para más detalles acerca de las licencias que cubren cada archivo, por favor
+%	revise el archivo LICENCIAS.md
+%
+%
+%
+
+\documentclass[10pt,a4paper,twoside,openright]{book}
+
+
+%Carga los paquetes de paquetes.sty
+
+\usepackage{sty/paquetes}
+\usepackage{sty/comandos}
+
+%======================================================================================================
+%
+%	Comienzo del documento
+%
+%======================================================================================================
+
+\begin{document}
+
+%	Página del título
+
+\subfile{tex/titulo.tex}
+
+%	Comienza la numeración en números romanos
+
+\frontmatter
+
+%	Crea el índice
+
+\tableofcontents
+\newpage
+
+\subfile{tex/intro}
+
+%	Reinicia la numeración de páginas y la hace en números arábigos
+
+\mainmatter
+
+
+
+%	Comienza la inclusión de cada capítulo
+
+\subfile{tex/modelo}
+
+%	Comienzan los apéndices
+
+\appendix
+
+\end{document}

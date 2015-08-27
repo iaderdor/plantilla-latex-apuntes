@@ -1,0 +1,20 @@
+\ProvidesPackage{comandos}
+
+%	Introduzca los comandos que quiera usar
+
+\addto\captionsspanish{\renewcommand{\chaptername}{Tema}}
+
+
+\newcommand{\vesp}[1]{\langle #1 \rangle}
+\newcommand{\dif}[1]{\mathrm{d} #1\ }
+\newcommand{\bra}[1]{\left\langle #1\right\vert}
+\newcommand{\ket}[1]{\left\vert #1\right\rangle }
+\newcommand{\braket}[2]{\langle #1\vert #2\rangle}
+\def\dbar{{\text{đ}}}
+\def\sh{\mathrm{sh}}
+
+%	Ambiente teorema
+
+\newtheorem{Teorema}{Teorema}[chapter]
+\newtheorem{Problema}{Problema}[chapter]
+\newtheorem{Ejemplo}{Ejemplo}[chapter]

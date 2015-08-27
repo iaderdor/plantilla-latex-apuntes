@@ -1,0 +1,59 @@
+%
+%
+%
+%
+%	Este archivo fue originalmente creado por:
+%
+%	Peter Wilson (herries.press@earthlink.net)
+%
+%	La licencia aplicable a ESTE ARCHIVO ES
+%	
+%	CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%
+%
+%
+%
+%
+
+
+\documentclass[{../apuntes.tex}]{subfiles}
+
+
+% Crea el comando para incluir la página del título en el documento
+
+\newcommand*{\titleGM}{\begingroup % Crea el comando para incluir la página del título en el documento
+\hbox{ % Caja horizontal
+\hspace*{0.1\textwidth} % Espacios en blanco a la izquierda de la página del título 
+\rule{1pt}{\textheight} % Línea vertical
+\hspace*{0.05\textwidth} % Espacios en blanco entre la línea vertical y el texto de la página del título
+\parbox[b]{0.75\textwidth}{ % Caja de párrafo que restringe al texto de salirse de la página
+
+
+ % Título
+{\noindent\Huge Apuntes \\[0.5\baselineskip] asingatura tal}\\[2\baselineskip]
+
+% Subtítulo o descripción
+{\large \textit{Del curso 2015-2016 impartido por Benito Camelas}}\\[4\baselineskip]
+
+% Nombre del autor
+{\Large \textsc{ismael aderdor}}
+
+\vspace{0.6\textheight} % Espacio en blanco entre la caja del título y el editor
+
+% Editor
+{\noindent }\\[\baselineskip]
+}}
+\endgroup}
+
+
+\begin{document}
+
+\thispagestyle{empty} % Elimina los números de página
+\titleGM % Incluye la página del título
+\newpage
+\thispagestyle{empty}
+\hspace{2cm}
+\newpage
+
+\end{document}
