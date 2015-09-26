@@ -40,6 +40,10 @@ En este archivo se hallan definidos algunos comandos de `LaTeX`. Debería modifi
 
 Este archivo carga todos los paquetes necesarios para que compile el documento, así como algunas opciones de los propios paquetes. Declarándolos aquí en vez de en `apuntes.tex` conseguimos mayor limpieza y modularidad en el documento.
 
+###`sty/titulo.sty`
+
+En este archivo se encuentran las variables que modifican el título, descripción, autor y editor que posteriormente se aplicarán a la portada del documento.
+
 ####`tex/`
 
 Dentro de esta carpeta deberían de ir la totalidad de los archivos `.tex`, a excepción de `apuntes.tex`, que es el documento padre.
